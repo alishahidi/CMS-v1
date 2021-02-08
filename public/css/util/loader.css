@@ -1,0 +1,122 @@
+/* https://github.com/jovey-zheng/loader */
+
+[data-loader='spinner']
+{
+    width: 55px;
+    height: 55px;
+
+    -webkit-animation: spinner 1.2s infinite ease-in-out;
+    -o-animation: spinner 1.2s infinite ease-in-out;
+    animation: spinner 1.2s infinite ease-in-out;
+
+    background-color: #333;
+}
+@-webkit-keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(0) rotateY(0);
+        -o-transform: perspective(120px) rotateX(0) rotateY(0);
+        transform: perspective(120px) rotateX(0) rotateY(0);
+    }
+    50%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        transform: perspective(120px) rotateX(-180deg) rotateY(0);
+    }
+    100%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+@-moz-keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(0) rotateY(0);
+        -o-transform: perspective(120px) rotateX(0) rotateY(0);
+        transform: perspective(120px) rotateX(0) rotateY(0);
+    }
+    50%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        transform: perspective(120px) rotateX(-180deg) rotateY(0);
+    }
+    100%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+@-o-keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(0) rotateY(0);
+        -o-transform: perspective(120px) rotateX(0) rotateY(0);
+        transform: perspective(120px) rotateX(0) rotateY(0);
+    }
+    50%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        transform: perspective(120px) rotateX(-180deg) rotateY(0);
+    }
+    100%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+@keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(0) rotateY(0);
+        -o-transform: perspective(120px) rotateX(0) rotateY(0);
+        transform: perspective(120px) rotateX(0) rotateY(0);
+    }
+    50%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(0);
+        transform: perspective(120px) rotateX(-180deg) rotateY(0);
+    }
+    100%
+    {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        -o-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffd0;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: wait !important;
+}
